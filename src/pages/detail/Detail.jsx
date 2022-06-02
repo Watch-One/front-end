@@ -64,7 +64,12 @@ const Detail = () => {
                                     }
                                 </div>
                                 <p className="overview">{item.overview}</p>
-                                <p>{providers.map((provider) => <MovieProvider provider={provider}/>)}</p>
+                                <div className="section__header">
+                                    { providers.length > 0 ? <h2>Streaming platforms</h2> : "" }
+                                </div>
+                                <div className='providers'>
+                                    {providers.map((provider) => <MovieProvider key={provider.movie_url} provider={provider}/>)}
+                                </div>
                                 <div className="cast">
                                     <div className="section__header">
                                         <h2>Casts</h2>
