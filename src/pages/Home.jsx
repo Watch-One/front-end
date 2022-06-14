@@ -14,7 +14,7 @@ const Home = () => {
             <div className="container">
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>Películas en tendencia</h2>
+                        <h2>Trending movies</h2>
                         <Link to="/movie">
                             <OutlineButton className="small">View more</OutlineButton>
                         </Link>
@@ -24,9 +24,9 @@ const Home = () => {
 
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>Películas más valoradas</h2>
+                        <h2>Top rated movies</h2>
                         <Link to="/movie">
-                            <OutlineButton className="small">Ver más</OutlineButton>
+                            <OutlineButton className="small">View more</OutlineButton>
                         </Link>
                     </div>
                     <MovieList category={category.movie} type={movieType.top_rated}/>
@@ -36,7 +36,7 @@ const Home = () => {
                     <div className="section__header mb-2">
                         <h2>TV Shows</h2>
                         <Link to="/tv">
-                            <OutlineButton className="small">Ver más</OutlineButton>
+                            <OutlineButton className="small">View more</OutlineButton>
                         </Link>
                     </div>
                     <MovieList category={category.tv} type={tvType.popular}/>
@@ -44,9 +44,9 @@ const Home = () => {
 
                 <div className="section mb-3">
                     <div className="section__header mb-2">
-                        <h2>Mejor valorado</h2>
+                        <h2>Top rated</h2>
                         <Link to="/tv">
-                            <OutlineButton className="small">Ver más</OutlineButton>
+                            <OutlineButton className="small">View more</OutlineButton>
                         </Link>
                     </div>
                     <MovieList category={category.tv} type={tvType.top_rated}/>
